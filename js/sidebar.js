@@ -5,9 +5,10 @@ const xmark = document.querySelector(".xmark a");
 
 const general = document.querySelector(".general");
 const orders = document.querySelector(".orders");
-const about_kafe = document.querySelector(".about_kafe");
+const about_kafe = document.querySelector(".about-kafe");
 const likes = document.querySelector(".likes");
 const dislike = document.querySelector(".dislike");
+const aplication = document.querySelector(".aplication");
 
 
 
@@ -22,22 +23,58 @@ xmark.addEventListener("click", () => {
     sidebar_icon.style.display = "block";
 });
 
+
+
 general.addEventListener('click', () => {
-    // general.style.background = "#F8B602";
+    general.classList.add("sidebar-active");
+    orders.classList.remove("sidebar-active");
+    about_kafe.classList.remove("sidebar-active");
+    likes.classList.remove("sidebar-active");
+    dislike.classList.remove("sidebar-active");
+    aplication.classList.remove("sidebar-active");
 });
 
 orders.addEventListener('click', () => {
-    // orders.style.background = "#F8B602";
+    general.classList.remove("sidebar-active");
+    orders.classList.add("sidebar-active");
+    about_kafe.classList.remove("sidebar-active");
+    likes.classList.remove("sidebar-active");
+    dislike.classList.remove("sidebar-active");
+    aplication.classList.remove("sidebar-active");
 });
 
 about_kafe.addEventListener('click', () => {
-    // about_kafe.style.background = "#F8B602";
+    general.classList.remove("sidebar-active");
+    orders.classList.remove("sidebar-active");
+    about_kafe.classList.add("sidebar-active");
+    likes.classList.remove("sidebar-active");
+    dislike.classList.remove("sidebar-active");
+    aplication.classList.remove("sidebar-active");
 });
 
 likes.addEventListener('click', () => {
-    // likes.style.background = "#F8B602";
+    general.classList.remove("sidebar-active");
+    orders.classList.remove("sidebar-active");
+    about_kafe.classList.remove("sidebar-active");
+    likes.classList.add("sidebar-active");
+    dislike.classList.remove("sidebar-active");
+    aplication.classList.remove("sidebar-active");
 });
 
 dislike.addEventListener('click', () => {
-    // dislike.style.background = "#F8B602";
+    general.classList.remove("sidebar-active");
+    orders.classList.remove("sidebar-active");
+    about_kafe.classList.remove("sidebar-active");
+    likes.classList.remove("sidebar-active");
+    dislike.classList.add("sidebar-active");
+    aplication.classList.remove("sidebar-active");
+});
+
+aplication.addEventListener('click', () => {
+    general.classList.remove("sidebar-active");
+    orders.classList.remove("sidebar-active");
+    about_kafe.classList.remove("sidebar-active");
+    likes.classList.remove("sidebar-active");
+    dislike.classList.remove("sidebar-active");
+    aplication.classList.add("sidebar-active");
 });

@@ -141,10 +141,10 @@ img {
 }
 .general-logo i, .orders-logo i, .about-kafe-logo i, .likes-logo i, .dislike-logo i, .aplication-logo i {
     color: #A098AE;
-    font-size: 20px;
+    font-size: 15px;
 }
 .general-text p, .orders-text p, .about-kafe-text p, .likes-text p, .dislike-text p, .aplication-text p {
-    font-size: 18px;
+    font-size: 14px;
     color:#A098AE;
 }
 /* Sidebar end */

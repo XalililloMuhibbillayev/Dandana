@@ -1,0 +1,171 @@
+:root {
+    --color: #F8B602;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sidebar-icon a i {
+    font-size: 27px;
+    color: var(--color);
+}
+.nav-title h2 {
+    color: #2E2E2E;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+.nav-input {
+    display: flex;
+    gap: 30px;
+}
+.input-block {
+    display: flex;
+    align-items: center; 
+    gap: 8px;  
+}
+.search-icon-block i {
+    color: var(--color);
+    font-size: 17px;
+}
+
+.search-input {
+    width: 200px;
+    outline: none;
+    border: none;
+    color: #A098AE;
+}
+.search-input::placeholder {
+    font-size: 18px;
+}
+.shop-icon i {
+    font-size: 20px;
+    color: var(--color);
+}
+/* Sidebar */
+.sidebar {
+    display: none;
+}
+.active {
+    width: 245px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-top: 76px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.xmark i {
+    font-size: 30px;
+    color: var(--color);
+}
+.sidebar-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.general, .orders, .about-kafe, .likes, .dislike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 32px;
+    padding:24px;
+    gap: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    /* background-color: #F8B602; */
+    /* box-shadow: 0px 20px 50px 0px rgba(46, 46, 46, 0.05); */
+}
+.general-logo i, .orders-logo i, .about-kafe-logo i, .likes-logo i, .dislike-logo i {
+    color: #A098AE;
+    font-size: 20px;
+}
+.general-text p, .orders-text p, .about-kafe-text p, .likes-text p, .dislike-text p {
+    font-size: 18px;
+    color:#A098AE;
+}
+/* Sidebar end */
+/* Navbar end */
+
+/* Responsive */
+
+@media screen and (max-width:910px) {
+    .nav-title h2 {
+        font-size: 30px;
+    }
+    .search-input {
+        display: none;
+    }
+    .search-icon-block a i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .nav-input {
+        gap: 0px
+    }
+    .nav-title h2 {
+        font-size: 25px;
+    }
+    .search-icon-block {
+        display: none;
+    }
+    .search-input {
+        display: none;
+    }
+    .shop-icon i {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .nav-title h2 {
+        font-size: 20px;
+    }
+
+}
+
+/* Responsive end */

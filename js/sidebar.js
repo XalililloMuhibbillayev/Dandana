@@ -1,3 +1,5 @@
+const body = document.querySelector("body");
+
 const sidebar_icon = document.querySelector(".sidebar-icon a");
 const sidebar = document.querySelector(".sidebar");
 const xmark = document.querySelector(".xmark a");
@@ -13,14 +15,16 @@ const aplication = document.querySelector(".aplication");
 
 
 
-sidebar_icon.addEventListener("click", () => {
+sidebar_icon.addEventListener("click", function() {
     sidebar.classList.add("active");
     sidebar_icon.style.display = "none";
+    body.style.overflow = "hidden"
 });
 
-xmark.addEventListener("click", () => {
+xmark.addEventListener("click", function() {
     sidebar.classList.remove("active");
     sidebar_icon.style.display = "block";
+    body.style.overflow = "auto"
 });
 
 

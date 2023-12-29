@@ -450,6 +450,17 @@ img {
         width: 150px;
         font-weight: 700;
     }
+    .category-main {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+        gap: 1px;
+        margin-top: 24px;
+    } 
+    .category-main::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 /* Responsive end */

@@ -101,6 +101,13 @@ img {
     font-size: 30px;
     color: var(--color);
 }
+.sidebar-logo h2 {
+    font-size: 32px;
+    color: #2E2E2E;
+}
+.sidebar-logo h2 b {
+    color: var(--color);
+}
 .sidebar-main {
     display: flex;
     flex-direction: column;

@@ -84,14 +84,17 @@ aplication.addEventListener('click', () => {
 });
 
 // Count 
-let count = 0;
+let plus = document.querySelector("#plus");
+let text = document.querySelector("#count");
+let minus = document.querySelector("#minus");
 
-function increment() {
-    count++;
-    document.getElementById('count').innerText = count;
-}
-
-function decrement() {
-    count--;
-    document.getElementById('count').innerText = count;
-}
+text.textContent = 0
+plus.addEventListener("click", () => {
+    text.textContent++
+})
+minus.addEventListener("click", () => {
+    text.textContent--
+    if (text.textContent < 0) {
+        text.textContent = 0
+    }
+})

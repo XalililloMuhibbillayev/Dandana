@@ -36,7 +36,7 @@ img {
     background-color: white;
 
 }
-.sidebar-icon a i {
+.sidebar-icon i {
     font-size: 27px;
     color: var(--color);
 }
@@ -356,6 +356,40 @@ img {
     font-weight: 400;
 }
 /* Cart end */
+/* Pagination */
+
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .pagination-active {
+    background-color: var(--color);
+    color: white;
+}
+
+/* Pagination end */
 /* Main end */
 
 

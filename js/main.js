@@ -1,8 +1,8 @@
 const body = document.querySelector("body");
 
-const sidebar_icon = document.querySelector(".sidebar-icon a");
+const sidebar_icon = document.querySelector(".sidebar-icon i");
 const sidebar = document.querySelector(".sidebar");
-const xmark = document.querySelector(".xmark a");
+const xmark = document.querySelector(".xmark i");
 
 
 const general = document.querySelector(".general");
@@ -82,3 +82,4 @@ aplication.addEventListener('click', () => {
     dislike.classList.remove("sidebar-active");
     aplication.classList.add("sidebar-active");
 });
+

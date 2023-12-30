@@ -83,3 +83,15 @@ aplication.addEventListener('click', () => {
     aplication.classList.add("sidebar-active");
 });
 
+// Count 
+let count = 0;
+
+function increment() {
+    count++;
+    document.getElementById('count').innerText = count;
+}
+
+function decrement() {
+    count--;
+    document.getElementById('count').innerText = count;
+}

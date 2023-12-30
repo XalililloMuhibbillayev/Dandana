@@ -294,14 +294,11 @@ img {
     float: right;
 }
 
-.star-widget input:checked ~ label {
-    color: var(--color);
-}
-
 .product-text {
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 10px;
+    margin-top: 10px;
 }
 .product-title h3 {
     color: #2E2E2E;
@@ -355,41 +352,37 @@ img {
     font-size: 18px;
     font-weight: 400;
 }
+
 /* Cart end */
 /* Pagination */
 
-.pagination {
-    margin-top: 40px;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-}
-
-.pagination li {
-    margin: 0 5px;
-}
-
-.pagination a {
-    display: block;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.pagination a:hover {
-    background-color: #ddd;
-}
-
-.pagination .pagination-active {
-    background-color: var(--color);
-    color: white;
-}
-
 /* Pagination end */
+
+/* Count */
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.counter i {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #F8B602;
+    border-radius: 8px;
+}
+
+#count {
+    font-size: 20px;
+}
+
+.counter-btn {
+    font-size: 1em;
+    padding: 10px;
+}
+/* Count end */
+
 /* Main end */
 
 

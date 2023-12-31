@@ -17,18 +17,14 @@
                 <!-- Sidebar -->
                 <div class="nav-sidebar">
                     <div class="sidebar-icon">
-                        <a href="#">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                     <div class="sidebar">
-                        <div class="xmark">
-                            <a href="#">    
-                                <i class="fa-solid fa-xmark"></i>
-                            </a>
+                        <div class="xmark">   
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
                         <div class="sidebar-logo">
-                            <img src="./images/logo.svg" alt="">
+                            <h2><b>Z</b>aytun</h2>
                         </div>
                         <div class="sidebar-main">
                             <a href="./index.html">
@@ -111,6 +107,62 @@
                     </div>
                     <div class="shop-icon">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="order-modal">
+                            <div class="order-modal-title">
+                                <h3>Buyurtmalar</h3>
+                                <div class="order-xmark"> 
+                                    <span>2 ta</span>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="order-modal-main">
+                                <div class="order-modal-product">
+                                    <div class="order-modal-product-image">
+                                        <img src="./images/order-modal-product-image.svg" alt="">
+                                    </div>
+                                    <div class="order-modal-product-main">
+                                        <div class="order-modal-product-title">
+                                            <h4>McSpicy Chicken Double Patty Burger</h4>
+                                            <p>25.000</p>
+                                        </div>
+                                        <div class="counter order-modal-counter">
+                                            <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                            <span id="count">0</span>
+                                            <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-modal-product">
+                                    <div class="order-modal-product-image">
+                                        <img src="./images/order-modal-product-image.svg" alt="">
+                                    </div>
+                                    <div class="order-modal-product-main">
+                                        <div class="order-modal-product-title">
+                                            <h4>McSpicy Chicken Double Patty Burger</h4>
+                                            <p>25.000</p>
+                                        </div>
+                                        <div class="counter order-modal-counter">
+                                            <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                            <span id="count">0</span>
+                                            <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-modal-prices">
+                                <div class="for-service">
+                                    <p>Xizmat uchun</p>
+                                    <b>+0.00</b>
+                                </div>
+                                <div class="total">
+                                    <p>Umumiy</p>
+                                    <b>50.000</b>
+                                </div>
+                                <div class="order-modal-prices-btn">
+                                    <a href="#">Buyurtma</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,216 +174,203 @@
                 <div class="cart-title">
                     <h3>Qo'yiq Taomlar</h3>
                 </div>
-                    <div class="product-block">
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
-                                </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                <div class="product-block">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./images/product_image.svg" alt="Product image">
                         </div>
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
+                        <div class="product-main">
+                            <div class="product-rating">
+                                <div class="star-widget">
+                                    <input type="radio" name="rate" id="rate-1">
+                                    <label for="rate-1" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-2">
+                                    <label for="rate-2" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-3">
+                                    <label for="rate-3" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-4">
+                                    <label for="rate-4" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-5">
+                                    <label for="rate-5" class="fas fa-star"></label>
                                 </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <h3>Baliqli Burger</h3>
+                                    <p>25.000</p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
                                 </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
-                                </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
-                                </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product">
-                            <a href="#">
-                                <div class="product-image">
-                                    <img src="./images/product_image.svg" alt="Product image">
-                                </div>
-                                <div class="product-main">
-                                    <div class="product-rating">
-                                        <div class="star-widget">
-                                            <input type="radio" name="rate" id="rate-1">
-                                            <label for="rate-1" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-2">
-                                            <label for="rate-2" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-3">
-                                            <label for="rate-3" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-4">
-                                            <label for="rate-4" class="fas fa-star"></label>
-                                            <input type="radio" name="rate" id="rate-5">
-                                            <label for="rate-5" class="fas fa-star"></label>
-                                        </div>
-                                    </div>
-                                    <div class="product-text">
-                                        <div class="product-title">
-                                            <h3>Baliqli Burger</h3>
-                                            <p>25.000</p>
-                                        </div>
-                                        <div class="product-btn">
-                                            <a href="#">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="product">
+                    <div class="product-image">
+                        <img src="./images/product_image.svg" alt="Product image">
+                    </div>
+                    <div class="product-main">
+                        <div class="product-rating">
+                            <div class="star-widget">
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-5">
+                                <label for="rate-5" class="fas fa-star"></label>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-title">
+                                <h3>Baliqli Burger</h3>
+                                <p>25.000</p>
+                            </div>
+                            <div class="counter">
+                                <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                <span id="count">0</span>
+                                <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./images/product_image.svg" alt="Product image">
+                        </div>
+                        <div class="product-main">
+                            <div class="product-rating">
+                                <div class="star-widget">
+                                    <input type="radio" name="rate" id="rate-1">
+                                    <label for="rate-1" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-2">
+                                    <label for="rate-2" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-3">
+                                    <label for="rate-3" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-4">
+                                    <label for="rate-4" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-5">
+                                    <label for="rate-5" class="fas fa-star"></label>
+                                </div>
+                            </div>
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <h3>Baliqli Burger</h3>
+                                    <p>25.000</p>
+                                </div>
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./images/product_image.svg" alt="Product image">
+                        </div>
+                        <div class="product-main">
+                            <div class="product-rating">
+                                <div class="star-widget">
+                                    <input type="radio" name="rate" id="rate-1">
+                                    <label for="rate-1" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-2">
+                                    <label for="rate-2" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-3">
+                                    <label for="rate-3" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-4">
+                                    <label for="rate-4" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-5">
+                                    <label for="rate-5" class="fas fa-star"></label>
+                                </div>
+                            </div>
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <h3>Baliqli Burger</h3>
+                                    <p>25.000</p>
+                                </div>
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                    <div class="product-image">
+                        <img src="./images/product_image.svg" alt="Product image">
+                    </div>
+                    <div class="product-main">
+                        <div class="product-rating">
+                            <div class="star-widget">
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-5">
+                                <label for="rate-5" class="fas fa-star"></label>
+                            </div>
+                        </div>
+                        <div class="product-text">
+                            <div class="product-title">
+                                <h3>Baliqli Burger</h3>
+                                <p>25.000</p>
+                            </div>
+                            <div class="counter">
+                                <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                <span id="count">0</span>
+                                <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./images/product_image.svg" alt="Product image">
+                        </div>
+                        <div class="product-main">
+                            <div class="product-rating">
+                                <div class="star-widget">
+                                    <input type="radio" name="rate" id="rate-1">
+                                    <label for="rate-1" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-2">
+                                    <label for="rate-2" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-3">
+                                    <label for="rate-3" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-4">
+                                    <label for="rate-4" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-5">
+                                    <label for="rate-5" class="fas fa-star"></label>
+                                </div>
+                            </div>
+                            <div class="product-text">
+                                <div class="product-title">
+                                    <h3>Baliqli Burger</h3>
+                                    <p>25.000</p>
+                                </div>
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -84,17 +84,27 @@ aplication.addEventListener('click', () => {
 });
 
 // Count 
-let plus = document.querySelector("#plus");
-let text = document.querySelector("#count");
-let minus = document.querySelector("#minus");
 
-text.textContent = 0
-plus.addEventListener("click", () => {
-    text.textContent++
-})
-minus.addEventListener("click", () => {
-    text.textContent--
-    if (text.textContent < 0) {
-        text.textContent = 0
-    }
-})
+function increment(e) {
+    if(e.nextElementSibling.innerHTML!=0)e.nextElementSibling.innerHTML-=1;
+};
+
+function decrement(e) {
+    e.previousElementSibling.innerHTML=parseInt(e.previousElementSibling.innerHTML)+1;
+};
+
+// Order Modal
+
+const shop_icon = document.querySelector(".shop-icon i");
+const order_modal = document.querySelector(".order-modal");
+const order_xmark = document.querySelector(".order-xmark i");
+
+shop_icon.addEventListener('click', () => {
+    order_modal.style.display = 'flex';
+    body.style.overflow = "hidden"
+});
+
+order_xmark.addEventListener('click', () => {
+    order_modal.style.display = 'none';
+    body.style.overflow = "auto"
+});

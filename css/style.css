@@ -79,14 +79,16 @@ img {
     display: flex;
     gap: 36px;
     width: 600px;
+    height: 100vh;
     padding: 20px;
     flex-direction: column;
     background-color: white;
     position: absolute;
-    top: 325px;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
     display: none;
 }
 .order-xmark {
@@ -204,9 +206,22 @@ img {
     font-size: 18px;
     font-weight: 500;
 }
-.see-all a {
-    font-size: 18px;
-    color: var(--color);    
+.bread-and-tea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bread-and-tea h3 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.bread-and-tea span {
+    padding: 3px 10px;
+    background-color: #F8B602;
+    color: #2E2E2E;
+    border-radius: 15px;
 }
 /* Order modal end */
 

@@ -204,6 +204,10 @@ img {
     font-size: 18px;
     font-weight: 500;
 }
+.see-all a {
+    font-size: 18px;
+    color: var(--color);    
+}
 /* Order modal end */
 
 
@@ -404,7 +408,7 @@ img {
     gap: 10px;
     width: 336px;
     height: 363px;
-    padding: 32px;
+    padding: 12px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .product-image {
@@ -436,8 +440,7 @@ img {
 
 .product-text {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 1px;
     margin-top: 10px;
 }
 .product-title h3 {
@@ -502,7 +505,9 @@ img {
 .counter {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    padding: 10px;
+    width: 130px;
 
 }
 .counter i {

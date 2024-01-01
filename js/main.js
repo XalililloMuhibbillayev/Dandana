@@ -101,10 +101,8 @@ const order_xmark = document.querySelector(".order-xmark i");
 
 shop_icon.addEventListener('click', () => {
     order_modal.style.display = 'flex';
-    body.style.overflow = "hidden"
 });
 
 order_xmark.addEventListener('click', () => {
     order_modal.style.display = 'none';
-    body.style.overflow = "auto"
 });

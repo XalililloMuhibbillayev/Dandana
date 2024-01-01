@@ -110,16 +110,12 @@ order_xmark.addEventListener('click', () => {
 });
 
 // Alert
-let alert = document.querySelector(".alert")
-let alert_xmark = document.querySelector('.alert-xmark');
-
-
-likes.addEventListener('click', () => {
-    alert.style.display = 'flex';
-    sidebar.classList.remove("active");
-});
-
-alert_xmark.addEventListener('click', () => {
-    alert.style.display = 'none';
-    sidebar_icon.style.display = "block";
-});
+function showAlert() {
+    var modal = document.getElementById('alertModal');
+    modal.style.display = 'flex';
+  }
+  
+  function closeAlert() {
+    var modal = document.getElementById('alertModal');
+    modal.style.display = 'none';
+  }

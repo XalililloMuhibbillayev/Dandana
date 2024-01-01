@@ -61,7 +61,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="likes">
+                                <div class="likes" onclick="showAlert()">
                                     <div class="likes-logo">
                                         <i class="fa-regular fa-thumbs-up"></i>
                                     </div>
@@ -92,11 +92,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="alert">
+                    <div class="alert" id="alertModal">
                         <div class="alert-title">
                             <p>Siz reaksiya qoldirdingiz !</p>
                         </div>
-                        <div class="alert-xmark">
+                        <div class="alert-xmark" onclick="closeAlert()">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>

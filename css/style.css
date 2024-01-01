@@ -39,6 +39,7 @@ img {
 .sidebar-icon i {
     font-size: 27px;
     color: var(--color);
+    cursor: pointer;
 }
 .nav-title h2 {
     color: #2E2E2E;
@@ -73,6 +74,7 @@ img {
 .shop-icon i {
     font-size: 20px;
     color: var(--color);
+    cursor: pointer;
 }
 /* Order modal */
 .order-modal {
@@ -430,6 +432,7 @@ img {
     height: 363px;
     padding: 12px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .product-image {
     width: 270px;

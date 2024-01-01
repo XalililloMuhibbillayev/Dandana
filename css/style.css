@@ -551,6 +551,31 @@ img {
 }
 /* Count end */
 
+/* Alert */
+.alert {
+    width: 450px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: #2EB886;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+}
+.alert-title p {
+    font-size: 25px;
+    color: white;
+}
+.alert-xmark i {
+    color: white;
+    font-size: 30px;
+}
+/* Alert End */
+
 /* Main end */
 
 
@@ -725,6 +750,16 @@ img {
     .order-xmark {
         align-items: center;
         gap: 20px;
+    }
+    .alert {
+        width: 350px;
+        right: 5px;
+    }
+    .alert-title p {
+        font-size: 20px;
+    }
+    .alert-xmark i {
+        font-size: 18px;
     }
 }
 

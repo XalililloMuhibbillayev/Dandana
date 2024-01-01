@@ -108,3 +108,18 @@ order_xmark.addEventListener('click', () => {
     order_modal.style.display = 'none';
     body.style.overflow = "auto"
 });
+
+// Alert
+let alert = document.querySelector(".alert")
+let alert_xmark = document.querySelector('.alert-xmark');
+
+
+likes.addEventListener('click', () => {
+    alert.style.display = 'flex';
+    sidebar.classList.remove("active");
+});
+
+alert_xmark.addEventListener('click', () => {
+    alert.style.display = 'none';
+    sidebar_icon.style.display = "block";
+});

@@ -548,6 +548,21 @@ img {
 
 /* Responsive */
 
+@media screen and (max-width:1024px) {
+    .order-modal { 
+        height: 40vh;
+        top: 300px;
+    }
+}
+
+@media screen and (max-height:600px) {
+    .order-modal { 
+        height: 70vh;
+        top: 300px;
+    }
+}
+
+
 @media screen and (max-width:910px) {
     .nav-title h2 {
         font-size: 30px;
@@ -579,6 +594,10 @@ img {
     }
     .product {
         width: 320px;
+    }
+    .order-modal { 
+        height: 50vh;
+        top: 300px;
     }
 }
 
@@ -684,6 +703,8 @@ img {
     }
     .order-modal {
         width: 350px;
+        height: 50vh;
+        top: 250px;
     }
     .order-xmark {
         align-items: center;

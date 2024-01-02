@@ -334,6 +334,22 @@ img {
     font-size: 20px;
 }
 
+.search-input {
+    width: 200px;
+    outline: none;
+    border: none;
+    color: #A098AE;
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+.input-block {
+    border: 1px solid var(--color);
+    border-radius: 6px;
+    padding:0 8px;
+
+}
 
 
 /* Reesponsive */

@@ -99,7 +99,21 @@ function showAlert() {
     modal.style.display = 'flex';
   }
   
-  function closeAlert() {
+function closeAlert() {
     var modal = document.getElementById('alertModal');
     modal.style.display = 'none';
-  }
+}
+
+// Map 
+// Initialize the map
+let map = L.map('map', {
+    center: [40.768810, 72.236280],
+    zoom: 13
+});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: "Uzbekistan"
+
+}).addTo(map)
+
+L.marker([40.768810, 72.236280]).addTo(map).bindPopup("Zaytun").openPopup()

@@ -1,0 +1,408 @@
+:root {
+    --color: #F8B602;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+}
+.sidebar-icon i {
+    font-size: 27px;
+    color: var(--color);
+    cursor: pointer;
+}
+.nav-title h2 {
+    color: #2E2E2E;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+.nav-input {
+    display: flex;
+    gap: 30px;
+}
+.input-block {
+    display: flex;
+    align-items: center; 
+    gap: 8px;  
+}
+.search-icon-block i {
+    color: var(--color);
+    font-size: 17px;
+}
+
+.search-input {
+    width: 200px;
+    outline: none;
+    border: none;
+    color: #A098AE;
+}
+.search-input::placeholder {
+    font-size: 18px;
+}
+.shop-icon i {
+    font-size: 20px;
+    color: var(--color);
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    display: none;
+}
+.active {
+    width: 245px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-top: 76px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.xmark i {
+    font-size: 30px;
+    color: var(--color);
+}
+.sidebar-logo h2 {
+    font-size: 32px;
+    color: #2E2E2E;
+}
+.sidebar-logo h2 b {
+    color: var(--color);
+}
+.sidebar-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.general, .orders, .about-kafe, .likes, .dislike, .aplication {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 204px;
+    height: 32px;
+    padding:24px;
+    gap: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.sidebar-active {
+    background-color: #F8B602;
+    box-shadow: 0px 20px 50px 0px rgba(46, 46, 46, 0.05);
+}
+.sidebar-active .general-logo i, .sidebar-active .general-text p {
+    color: white;
+}
+.sidebar-active .orders-logo i, .sidebar-active .orders-text p {
+    color: white;
+}
+.sidebar-active .about-kafe-logo i, .sidebar-active .about-kafe-text p {
+    color: white;
+}
+.sidebar-active .likes-logo i, .sidebar-active .likes-text p {
+    color: white;
+}
+.sidebar-active .dislike-logo i, .sidebar-active .dislike-text p {
+    color: white;
+}
+.sidebar-active .aplication-logo i, .sidebar-active .aplication-text p {
+    color: white;
+}
+.general-logo i, .orders-logo i, .about-kafe-logo i, .likes-logo i, .dislike-logo i, .aplication-logo i {
+    color: #A098AE;
+    font-size: 15px;
+}
+.general-text p, .orders-text p, .about-kafe-text p, .likes-text p, .dislike-text p, .aplication-text p {
+    font-size: 14px;
+    color:#A098AE;
+}
+/* Sidebar end */
+/* Navbar end */
+
+.order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    /* align-items: center; */
+}
+.order-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-title h3 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.order-title span {
+    color: #393939;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    background: var(--color);
+    border-radius: 15px;
+}
+
+.order-main-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.order-products {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.order-products-image {
+    width: 120px;
+    height: 106;
+}
+
+.order-products-title {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.order-products-title h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    width: 315px;
+}
+
+.order-products-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+}
+
+.order-products-price p {
+    color: #4F4F4F;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.22px;
+}
+
+.counter i {
+    font-size: 10px;
+    border-radius: 50%;
+}
+
+.bread-and-tea {
+    margin-top: 20px;
+    border-top: 5px solid #F8B602;
+}
+
+.order-total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.for-service, .total {
+    display: flex;
+    gap: 200px;
+    margin-top: 15px;
+}
+.for-service p{
+    color: var(--Color-Gray-1, #A098AE);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.for-service span {
+    color: var(--Color-Black, #2E2E2E);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.total p {
+    color: var(--Color-Black, #2E2E2E);
+    font-size: 18px;
+    font-weight: 500;
+}
+.total span {
+    color: #030000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.order-btn {
+    display: flex;
+    width: 350px;
+    height: 60px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color);
+    border-radius: 16px;
+    cursor: pointer;
+}
+.order-btn a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mobile-input {
+    width: 100%;
+    height: 60px;
+    background-color: #fafafa;
+    margin-top: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    display: none;
+}
+.mobile-input input {
+    width: 250px;
+    height: 52px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+
+.mobile-input input::placeholder {
+    font-size: 18px;
+    color: var(--color);
+}
+
+.back-to-menu {
+    margin-top: 10px;
+}
+
+.back-to-menu a, i {
+    color: var(--color);
+    font-size: 20px;
+}
+
+
+
+/* Reesponsive */
+
+@media screen and (max-width:900px) {
+    .order-products-title {
+        gap: 40px;
+    }
+
+    .order-products-title h3 {
+        width: 215px;
+    }
+    .order-products-price {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .order-btn {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .order-products-title {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .order-products-price {
+        gap: 25px;
+    }
+    .order-total-price {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .order-products-title h3 {
+        font-size: 18px;
+        width: 200px;
+    }
+    .order-products-price p {
+        font-size: 18px;
+    }
+    .order-products-title {
+        align-items: start;
+        gap: 10px;
+    }
+    .order-products-price {
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+    .counter {
+        padding: 0;
+        gap: 15px;
+        width: 100px;
+    }
+    .counter i {
+        padding: 5px;
+    }
+    .order-btn {
+        width: 310px;
+        height: 50px;
+    }
+    .mobile-input {
+        display: flex;
+    }
+}
+
+
+/* Responsive end */

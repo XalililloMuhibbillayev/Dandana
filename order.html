@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <!-- Icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-- Sidebar -->
+                <div class="nav-sidebar">
+                    <div class="sidebar-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="sidebar">
+                        <div class="xmark">   
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="sidebar-logo">
+                            <h2><b>Z</b>aytun</h2>
+                        </div>
+                        <div class="sidebar-main">
+                            <a href="./index.html">
+                                <div class="general">
+                                    <div class="general-logo">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <div class="general-text">
+                                        <p>Asosiy</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="orders">
+                                    <div class="orders-logo">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </div>
+                                    <div class="orders-text">
+                                        <p>Buyurtmalar</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="about-kafe">
+                                    <div class="about-kafe-logo">
+                                        <i class="fa-solid fa-bowl-food"></i>
+                                    </div>
+                                    <div class="about-kafe-text">
+                                        <p>Kafe haqida</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="likes" onclick="showAlert()">
+                                    <div class="likes-logo">
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="likes-text">
+                                        <p>Menga yoqdi !</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="dislike">
+                                    <div class="dislike-logo">
+                                        <i class="fa-regular fa-thumbs-down"></i>
+                                    </div>
+                                    <div class="dislike-text">
+                                        <p>Ma’qul kelmadi !</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="aplication">
+                                    <div class="aplication-logo">
+                                        <i class="fa-solid fa-file-circle-question"></i>
+                                    </div>
+                                    <div class="aplication-text">
+                                        <p>Ariza</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Alert -->
+                    <div class="alert" id="alertModal">
+                        <div class="alert-title">
+                            <p>Siz reaksiya qoldirdingiz !</p>
+                        </div>
+                        <div class="alert-xmark" onclick="closeAlert()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <!-- Alert end -->
+                </div>
+                <!-- Sidebar end -->
+                <div class="nav-title">
+                    <h2>Xush kelibsiz mehmon !</h2>
+                </div>
+                <div class="nav-input">
+                    <div class="input-block">
+                        <div class="search-icon-block">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>    
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Izlaash" name="search" class="search-input">
+                        </div>
+                    </div>
+                    <div class="shop-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="order">
+                <div class="order-title">
+                    <h3>Buyurtmalar</h3>
+                    <span>2 ta</span>
+                </div>
+                <div class="mobile-input">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Qidiruv">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="back-to-menu">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <a href="./index.html">Bosh menyunga qaytish</a>
+                </div>
+                <div class="order-main-menu">
+                    <div class="order-products">
+                        <div class="order-products-image">
+                            <img src="./images/order-prodduct.svg" alt="">
+                        </div>
+                        <div class="order-products-title">
+                            <h3>McSpicy Chicken Double Patty Burger</h3>
+                            <div class="order-products-price">
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                                <p>+25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-products">
+                        <div class="order-products-image">
+                            <img src="./images/order-prodduct.svg" alt="">
+                        </div>
+                        <div class="order-products-title">
+                            <h3>McSpicy Chicken Double Patty Burger</h3>
+                            <div class="order-products-price">
+                                <div class="counter">
+                                    <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                                <p>+25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bread-and-tea">
+                        <div class="order-products">
+                            <div class="order-products-image">
+                                <img src="./images/order-prodduct.svg" alt="">
+                            </div>
+                            <div class="order-products-title">
+                                <h3>Non</h3>
+                                <div class="order-products-price">
+                                    <div class="counter">
+                                        <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                        <span id="count">0</span>
+                                        <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                    </div>
+                                    <p>+5.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-products">
+                            <div class="order-products-image">
+                                <img src="./images/order-prodduct.svg" alt="">
+                            </div>
+                            <div class="order-products-title">
+                                <h3>Choy</h3>
+                                <div class="order-products-price">
+                                    <div class="counter">
+                                        <i class="fa-solid fa-minus" id="increment" onclick="increment(this)"></i>
+                                        <span id="count">0</span>
+                                        <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                    </div>
+                                    <p>+5.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-total-price">
+                    <div>
+                        <div class="for-service">
+                            <p>Xizmat uchun</p>
+                            <span>+0.00</span>
+                        </div>
+                        <div class="total">
+                            <p>Umumiy</p>
+                            <span>62.000</span>
+                        </div>
+                    </div>
+                    <div class="order-btn">
+                        <a href="#">Buyurtma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

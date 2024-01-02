@@ -76,162 +76,6 @@ img {
     color: var(--color);
     cursor: pointer;
 }
-/* Order modal */
-.order-modal {
-    display: flex;
-    gap: 36px;
-    width: 600px;
-    height: 100vh;
-    padding: 20px;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 330px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-.order-xmark {
-    display: flex;
-    gap: 50px;
-    justify-content: end;
-}
-.order-xmark i {
-    font-size: 30px;
-}
-.order-modal-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 560px;
-    background-color: white;
-}
-.order-modal-title h3 {
-    color: #000;
-    font-size: 26px;
-    font-weight: 600;
-}
-.order-modal-title span {
-    padding: 3px 10px;
-    background-color: #F8B602;
-    color: #2E2E2E;
-    border-radius: 15px;
-}
-
-.order-modal-main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    overflow-y: scroll;
-    margin-top: 50px;
-    /* height: 70vh; */
-}
-.order-modal-product {
-    display: flex;
-    gap: 10px;
-}
-.order-modal-product-image {
-    width: 125px;
-    height: 112px;
-}
-.order-modal-product-main {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.order-modal-product-title {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-}
-.order-modal-product-title h4 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    width: 250px;
-}
-.order-modal-product-title p {
-    color: #4F4F4F;
-    font-size: 22px;
-    font-weight: 500;
-}
-.order-modal-prices {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-.for-service, .total {
-    display: flex;
-    gap: 150px;
-}
-.for-service p, .total p {
-    width: 130px;
-    text-align: start;
-}
-.for-service b, .total b {
-    width: 80px;
-    text-align: end;
-}
-
-.for-service p {
-    color: #A098AE;
-    font-size: 14px;
-    font-weight: 500;
-}
-.for-service b {
-    color: #2E2E2E;
-    font-size: 18px;
-    font-weight: 500;
-}
-.total p {
-    color: #2E2E2E;
-    font-size: 18px;
-    font-weight: 500;
-}
-.total b {
-    color: #030000;
-    font-size: 24px;
-    font-weight: 500;
-}
-.order-modal-prices-btn {
-    margin-top: 20px;
-    display: flex;
-    width: 373px;
-    height: 64px;
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color);
-    border-radius: 16px;
-    cursor: pointer;
-}
-.order-modal-prices-btn a {
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-}
-.bread-and-tea {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.bread-and-tea h3 {
-    color: #000;
-    font-size: 26px;
-    font-weight: 600;
-}
-
-.bread-and-tea span {
-    padding: 3px 10px;
-    background-color: #F8B602;
-    color: #2E2E2E;
-    border-radius: 15px;
-}
-/* Order modal end */
-
 
 /* Sidebar */
 .sidebar {
@@ -581,21 +425,6 @@ img {
 
 /* Responsive */
 
-@media screen and (max-width:1024px) {
-    .order-modal { 
-        height: 0vh;
-        top: 350px;
-    }
-}
-
-@media screen and (max-height:600px) {
-    .order-modal { 
-        height: 90vh;
-        top: 300px;
-    }
-}
-
-
 @media screen and (max-width:910px) {
     .nav-title h2 {
         font-size: 30px;
@@ -628,21 +457,6 @@ img {
     .product {
         width: 320px;
     }
-    .order-modal {
-        height: 10px;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .order-modal {
-        width: 500px;
-    }
-    .order-modal-title {
-        width: 460px;
-    }
-    .order-modal-product-title {
-        gap: 10px;
-    }
 }
 
 @media screen and (max-width:610px) {
@@ -671,26 +485,6 @@ img {
     .banner-title p {
         width: 400px;
         font-size: 14px;
-    }
-    .order-modal {
-        width: 400px;
-    }
-    .order-modal-title {
-        width: 360px;
-    }
-    .order-modal-product-title {
-        gap: 20px;
-    }
-    .order-modal-product-title h4 {
-        font-size: 16px;
-        width: 170px;
-    }
-    .order-modal-counter i {
-        font-size: 15px;
-        padding: 5px;
-    }
-    .order-modal-prices-btn {
-        width: 270px;
     }
 }
 
@@ -731,25 +525,8 @@ img {
     .category-main::-webkit-scrollbar {
         display: none;
     }
-    .order-modal-product-title {
-        flex-direction: column;
-        align-items: start;
-        gap: 10px;
-    }
     .for-service, .total {
         gap: 40px;
-    }
-    .order-modal {
-        width: 350px;
-        height: 80vh;
-        top: 350px;
-    }
-    .order-modal-title {
-        width: 310px;
-    }
-    .order-xmark {
-        align-items: center;
-        gap: 20px;
     }
     .alert {
         width: 350px;
@@ -760,12 +537,6 @@ img {
     }
     .alert-xmark i {
         font-size: 18px;
-    }
-}
-
-@media screen and (min-height:896px) {
-    .order-modal {
-        height: 63vh;
     }
 }
 

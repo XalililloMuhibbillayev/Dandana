@@ -93,6 +93,8 @@ function decrement(e) {
     e.previousElementSibling.innerHTML=parseInt(e.previousElementSibling.innerHTML)+1;
 };
 
+
+
 // Alert
 function showAlert() {
     var modal = document.getElementById('alertModal');
